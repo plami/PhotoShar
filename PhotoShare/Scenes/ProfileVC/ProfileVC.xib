@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileVC" customModule="PhotoShare" customModuleProvider="target">
+            <connections>
+                <outlet property="imageViewProfile" destination="gKc-SI-jfP" id="7gU-0M-j2L"/>
+                <outlet property="labelProfileEmail" destination="VR6-2K-8ZA" id="I1Z-F7-Ol1"/>
+                <outlet property="labelProfileName" destination="PJX-TZ-Qyg" id="gGM-f2-FBN"/>
+                <outlet property="view" destination="iN0-l3-epB" id="c4y-sT-C7u"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJX-TZ-Qyg">
+                    <rect key="frame" x="186" y="294" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gKc-SI-jfP">
+                    <rect key="frame" x="147" y="144" width="120" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="64B-dp-QG0"/>
+                        <constraint firstAttribute="width" constant="120" id="t7B-34-3xe"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VR6-2K-8ZA">
+                    <rect key="frame" x="186" y="345" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTp-1u-odd">
+                    <rect key="frame" x="169.5" y="406" width="75" height="30"/>
+                    <state key="normal" title="View Posts"/>
+                    <connections>
+                        <action selector="viewPoststBtnPressed:" destination="-1" eventType="touchUpInside" id="JRQ-ZK-E8F"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLF-A9-zQ9">
+                    <rect key="frame" x="163" y="476" width="88" height="30"/>
+                    <state key="normal" title="Create Posts"/>
+                    <connections>
+                        <action selector="createPoststBtnPressed:" destination="-1" eventType="touchUpInside" id="HZE-LP-HG6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HLF-A9-zQ9" firstAttribute="top" secondItem="eTp-1u-odd" secondAttribute="bottom" constant="40" id="4Ff-yz-vD8"/>
+                <constraint firstItem="PJX-TZ-Qyg" firstAttribute="centerX" secondItem="gKc-SI-jfP" secondAttribute="centerX" id="9bi-mE-7zN"/>
+                <constraint firstItem="eTp-1u-odd" firstAttribute="centerX" secondItem="VR6-2K-8ZA" secondAttribute="centerX" id="CWE-un-edb"/>
+                <constraint firstItem="VR6-2K-8ZA" firstAttribute="top" secondItem="PJX-TZ-Qyg" secondAttribute="bottom" constant="30" id="EXo-4z-7Zp"/>
+                <constraint firstItem="PJX-TZ-Qyg" firstAttribute="top" secondItem="gKc-SI-jfP" secondAttribute="bottom" constant="30" id="Gdu-TC-joa"/>
+                <constraint firstItem="gKc-SI-jfP" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="100" id="HIT-ph-QIX"/>
+                <constraint firstItem="gKc-SI-jfP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="KCq-Ql-TwQ"/>
+                <constraint firstItem="VR6-2K-8ZA" firstAttribute="centerX" secondItem="PJX-TZ-Qyg" secondAttribute="centerX" id="Oh7-FR-h1h"/>
+                <constraint firstItem="eTp-1u-odd" firstAttribute="top" secondItem="VR6-2K-8ZA" secondAttribute="bottom" constant="40" id="aaj-KE-HbL"/>
+                <constraint firstItem="HLF-A9-zQ9" firstAttribute="centerX" secondItem="eTp-1u-odd" secondAttribute="centerX" id="vgo-ew-Nr2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="242.0289855072464" y="-38.169642857142854"/>
+        </view>
+    </objects>
+</document>
